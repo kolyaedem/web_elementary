@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+                        /*header*/
+
+header {
+    background: url(../img/first-bg.png) no-repeat center top / cover;
+    padding-bottom: 160px;   
+    
+}
+
+.clearfix:after { /* когда мы у нас есть один контейнер с флоатами у нас неверно идет расчет высоты, потому нужно добавить этот набор тегов для того чтоб убрать этот баг. Следовательно добавлять его нжуно в ту обертку элементов где есть флоаты у одной надписи*/
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+div {
+    box-sizing: border-box; /*Свойство чтоб все было по центру контейнера*/
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto; /* Any element will in center*/    
+}
+
+.logo {
+    margin-top: 44px;
+    float: left; /*позиционируем елементы относительно друг друга, если они расположены в одну строку*/
+}
+
+nav {
+    float: right;
+    margin-top: 45px;
+}
+
+.menu {
+    padding: 0; /*У каждого меню есть свои отступы, убираем их и выставляем список блоком*/
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    float: left; /*сами списки нужно тоже указывать как они будут, т.к. по умолчанию они не так расположены*/
+    display: block;
+    margin-right: 41px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.titles_first {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 210px;
+}
+
+h1 {
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+.button {
+    background: #fed136;
+    text-decoration: none;
+    color: #484543;
+    width: 240px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+
+                                /*section services */
+
+.title {
+    padding-top: 120px;/*мф помещаем в этом блоке все о несколько блоков для лучшего управления в дальнейшем и также используем клеарфикс*/
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #222222;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+        
+}
+
+.title p {
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.services {
+    margin-top: 80px;
+}
+
+.services_item {
+    width: 290px;
+    float: left;
+    text-align: center;
+    
+}
+
+.services_item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.services_item p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.55em;
+}
+
+.services_item:last-child { /*если мы хотим обратиться к последнему элементу из всех одинаковых которые есть будем добавлять last-child, но когда мы подвинем последний, нужно будет двигать и центральный, т.к. мы пока не используем сетку которую предоставляет bootstrap*/
+    float: right;
+}
+
+.services_item:nth-child(2) { /*это специальная команда чтоб обратится к порядковому номеру child-ov*/
+    margin-left: 30px;
+}
+
+#services {
+    padding-bottom: 120px;
+}
+
+                                        /*section portfolio*/
+
+#portfolio {
+    background: #f7f7f7;
+    padding-bottom: 120px;
+}
+
+.works {
+    margin-top: 80px;
+}
+
+.works img {
+    float: left;
+}
+.works img:last-child {
+    float: right;
+}
+.works img:nth-child(2) {
+    margin-left: 30px;
+}
+
+                                        /*section about*/
+#about {
+    padding-bottom: 0;    
+}
+
+.calendar span{
+    text-transform: uppercase;
+}
+
+.calendar_right, .calendar_left {
+    margin-top: 80px;
+}
+
+.calendar_left_text h2, .calendar_right_text h2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calendar_left_text p, .calendar_right_text p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.40em;
+}
+
+.calendar_left img  {    
+    float: left;    
+    margin-left: 50px;
+}
+
+.calendar_right img {
+    float: right;
+    margin-right: 50px;
+}
+
+.calendar_left_text {        
+    text-align: right;    
+    float: left; 
+    padding-left: 25px;    
+}
+
+.calendar_right_text {
+    text-align: left;
+    float: right;
+    padding-right: 25px;
+}
+
+                                                            /*footer*/
+
+footer {
+    text-align: center;
+    padding-bottom: 110px;
+    font-size: 14px;
+    color: #555555;    
+}
+
+
+
+
+
+
+
